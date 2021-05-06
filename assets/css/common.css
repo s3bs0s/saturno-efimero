@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'SaturnoEfimero';
+  src: url('../font/Saturno.woff') format('woff'), /* Modern Browsers */
+       url('../font/Saturno.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
 * {
+  margin: 0px;
+  padding: 0px;
   box-sizing: content-box;
+  font-size: 20px;
+  font-family: 'SaturnoEfimero';
+}
+
+body {
+  background: #FEE0E0;
+}
+
+/* Personalización de Bootstrap */
+
+.row {
+  margin: 0px;
 }
