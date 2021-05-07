@@ -21,3 +21,11 @@ body {
 .row {
   margin: 0px;
 }
+
+/* Media Query Versión Movil */
+
+@media (max-width: 1100px) {
+  body {
+    background: #FFF;
+  }
+}

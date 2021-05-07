@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
 
   <title>Saturno Efimero</title>
 </head>
@@ -18,7 +19,7 @@
     
     <!-- Navegador -->
 
-    <div class="row">
+    <div class="row row-nav">
       <div class="col-md">
         <nav class="nav-web">
           <a href="index.html">
@@ -47,7 +48,7 @@
         </nav>
         <nav class="nav-mobile">
           <button onClick="openMenu()" class="menu-button-open">
-            <img src="assets/img/boton-menu-movil.png" alt="Botón Menú" />
+            <img src="assets/img/nav/boton-menu-movil.png" alt="Botón Menú" />
           </button>
           <a href="index.html">
             <img src="assets/img/logo.png" alt="Logotipo Móvil" />
@@ -127,38 +128,80 @@
     <p>Development on page #69</p>
     <p>Development on page #70</p>
     
-    <!-- Menú Móvil -->
+    <!-- Pie de Página -->
 
-    <div class="menu-modal"></div>
-    <div class="menu-body">
-      <img
-        class="close-menu"
-        onClick="closeMenu()"
-        src="assets/img/boton-menu-movil.png"
-        alt="Cerrar Modal"
-      >
-      <ul>
-        <li>
-          <a href="index.html">Inicio</a>
-        </li>
-        <li>
-          <a class="nav-active" href="capitulos.html">Capitulos</a>
-        </li>
-        <li>
-          <a href="tienda.html">Tienda</a>
-        </li>
-        <li>
-          <a href="#">Extras</a>
-        </li>
-        <li>
-          <a class="long-item" href="#">¿Qué es saturno efimero?</a>
-        </li>
-        <li>
-          <a href="jhon.html">Jhon</a>
-        </li>
-      </ul>
-      <p class="signed">Saturno.efimero@hotmail.com</p>
+    <div class="row">
+      <div class="col-md">  
+        <footer class="footer-web">
+          <p>¡Compra aqui mi primer kit de notas <span>2021</span>!</p>
+          <img src="assets/img/footer/kit-notas.jpg" alt="Kit de Notas">
+        </footer>
+        <footer class="footer-mobile">
+          <div class="logo">
+            <img src="assets/img/logo.png" alt="Logotipo footer">
+          </div>
+          <div class="footer-body">
+            <ul class="menu">
+              <li>
+                <a href="index.html">Inicio</a>
+              </li>
+              <li>
+                <a href="capitulos.html">Capitulos</a>
+              </li>
+              <li>
+                <a href="tienda.html">Tienda</a>
+              </li>
+              <li>
+                <a href="#">Extras</a>
+              </li>
+              <li>
+                <a class="long-item" href="#">¿Qué es saturno efimero?</a>
+              </li>
+              <li>
+                <a href="jhon.html">Jhon</a>
+              </li>
+            </ul>
+            <div class="email">
+              <button>newsLetter</button>
+              <p>saturno.efimero@hotmail.com</p>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
+  </div>
+
+  <!-- Menú Móvil -->
+
+  <div class="menu-modal"></div>
+  <div class="menu-body">
+    <img
+      class="close-menu"
+      onClick="closeMenu()"
+      src="assets/img/nav/boton-menu-movil.png"
+      alt="Cerrar Modal"
+    >
+    <ul>
+      <li>
+        <a href="index.html">Inicio</a>
+      </li>
+      <li>
+        <a class="nav-active" href="capitulos.html">Capitulos</a>
+      </li>
+      <li>
+        <a href="tienda.html">Tienda</a>
+      </li>
+      <li>
+        <a href="#">Extras</a>
+      </li>
+      <li>
+        <a class="long-item" href="#">¿Qué es saturno efimero?</a>
+      </li>
+      <li>
+        <a href="jhon.html">Jhon</a>
+      </li>
+    </ul>
+    <p class="signed">Saturno.efimero@hotmail.com</p>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
