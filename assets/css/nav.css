@@ -1,8 +1,18 @@
+.nav-web,
+.nav-mobile {
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-web {
   margin: 40px 10px 0px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.nav-mobile {
+  margin: 20px 10px;
+  position: relative;
+  display: none;
 }
 
 /* Logo */
@@ -11,11 +21,14 @@
   height: 140px;
 }
 
-/* Menú */
+.nav-mobile a img {
+  height: 80px;
+}
+
+/* Menú WEB */
 
 .nav-web ul {
   margin: 0px;
-  text-decoration: none;
   display: flex;
   justify-content: center;
 }
@@ -35,7 +48,7 @@
   position: relative;
 }
 
-/* Barra del hover */
+/* Menú WEB -> Barra del hover */
 
 .nav-web ul li a hr {
   position: absolute;
@@ -55,7 +68,7 @@
   opacity: 1;
 }
 
-/* Items de texto largo */
+/* Menú WEB -> Items de texto largo */
 
 .nav-web ul li .long-item {
   font-size: 24px;
@@ -64,4 +77,117 @@
 
 .nav-web ul li .long-item hr {
   bottom: -24px;
+}
+
+/* Menú Móvil */
+
+.nav-mobile .menu-button-open {
+  position: absolute;
+  outline: none;
+  border: none;
+  background: none;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.nav-mobile .menu-button-open img {
+  height: 50px;
+}
+
+/* Menú Móvil -> Modal Menú */
+
+.menu-modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.menu-body {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  right: -79vw;
+  width: 75vw;
+  height: 100vh;
+  background: #fff;
+  border-left: 1px solid #bebebe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: right 500ms ease;
+}
+
+.menu-modal-open {
+  display: block;
+}
+
+.menu-body-open {
+  right: 0;
+}
+
+.menu-body .close-menu {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-align: right;
+  height: 50px;
+}
+
+.menu-body ul {
+  margin: 44px 0px 0px;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-body ul li {
+  max-width: 180px;
+  list-style: none;
+  margin: 0px 8px 23px;
+  text-align: center;
+}
+
+.menu-body ul li a, a:hover {
+  font-size: 22px;
+  color: #000;
+  text-decoration: none;
+}
+
+.menu-body ul li .nav-active {
+  font-size: 29px;
+}
+
+.menu-body .signed {
+  width: 100%;
+  margin: 0px;
+  padding: 20px 5px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Media Query Versión Movil */
+
+@media (max-width: 1100px) {
+  .nav-web {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+  }
+}
+
+@media (min-width: 1100px) {
+  .menu-modal-open {
+    display: none;
+  }
+  
+  .menu-body-open {
+    right: -79vw;
+  }
 }
