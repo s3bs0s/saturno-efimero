@@ -7,7 +7,7 @@
 }
 
 .footer-mobile {
-  margin: 18px 20px;
+  margin: 16px 8px;
   display: none;
   flex-direction: column;
 }
@@ -41,53 +41,50 @@
 
 .footer-mobile .logo {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-mobile .logo img {
-  height: 70px;
+  height: 80px;
 }
 
-/* Footer Móvil -> Body */
-
-.footer-body {
-  display: flex;
-}
-
-.footer-body .menu, .email {
-  margin: 14px 16px 0px 0px;
-}
-
-.footer-body .menu {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-body .menu li {
-  list-style: none;
-  line-height: 18pt;
-}
-
-.footer-body .menu li a, a:hover {
-  font-size: 19px;
-  color: #000;
-  text-decoration: none;
-}
-
-.footer-body .email {
+.footer-mobile .logo .email {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.footer-body .email button {
+.footer-mobile .logo .email button {
   border: 1px solid #000;
   padding: 2px 24px;
   margin-bottom: 10px;
   background: #CDEEFF;
 }
-.footer-body .email p {
+.footer-mobile .logo .email p {
   margin: 0px;
+  font-size: 18px;
+}
+
+.footer-mobile .menu {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-mobile .menu li {
+  list-style: none;
+  line-height: 19pt;
+  margin: 0px 10px;
+}
+
+.footer-mobile .menu li a, a:hover {
+  font-size: 19px;
+  color: #000;
+  text-decoration: none;
 }
 
 /* Media Query Versión Movil */
