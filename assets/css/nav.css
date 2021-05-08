@@ -136,6 +136,7 @@
   right: 20px;
   text-align: right;
   height: 50px;
+  cursor: pointer;
 }
 
 .menu-body ul {
