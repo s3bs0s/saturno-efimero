@@ -14,14 +14,17 @@
 
 /* Footer WEB */
 
-.footer-web p {
+.footer-web a,
+.footer-web a:hover {
   text-align: center;
   line-height: 34pt;
   font-size: 37px;
   max-width: 330px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.footer-web p span {
+.footer-web a span {
   font-family: 'Calibri';
   font-size: 40px;
 }
@@ -78,7 +81,6 @@
 }
 
 .footer-body .email button {
-  outline: none;
   border: 1px solid #000;
   padding: 2px 24px;
   margin-bottom: 10px;
